@@ -1,0 +1,35 @@
+{
+  "name": "vite-template-solid",
+  "version": "0.0.0",
+  "description": "",
+  "type": "module",
+  "moduleResolution": "bundler",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "generate": "graphql-codegen --config codegen.ts --watch",
+    "schema": "get-graphql-schema http://localhost:8080/v1/graphql -h 'x-hasura-admin-secret=kAQ4hW8xJeyMICatUx7gvTGM' > project-schema.graphql"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@graphql-codegen/cli": "^5.0.2",
+    "@graphql-codegen/schema-ast": "^4.1.0",
+    "@graphql-codegen/typescript": "^4.0.9",
+    "@graphql-codegen/typescript-operations": "^4.2.3",
+    "@graphql-codegen/client-preset-swc-plugin": "^0.2.0",
+    "@parcel/watcher": "^2.4.1",
+    "get-graphql-schema": "^2.1.2",
+    "solid-devtools": "^0.29.2",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.11",
+    "vite-plugin-solid": "^2.8.2"
+  },
+  "dependencies": {
+    "@tanstack/solid-query": "^5.56.2",
+    "graphql": "^16.9.0",
+    "graphql-request": "^7.1.0",
+    "solid-js": "^1.8.11"
+  }
+}

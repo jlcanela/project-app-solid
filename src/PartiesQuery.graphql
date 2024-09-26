@@ -1,0 +1,6 @@
+query Parties {
+  identity_parties {
+    party_id
+    name
+  }
+}
